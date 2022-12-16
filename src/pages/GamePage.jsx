@@ -4,6 +4,8 @@ import Col from 'react-bootstrap/Col';
 import ButtonPlay from '../components/ButtonPlay';
 import Cards from '../components/Cards';
 import ToastWinner from '../components/ToastWinner';
+import Foundation from '../components/Foundation';
+import OutOfCards from '../components/outOfCards';
 
 const GamePage = () => {
 	return (
@@ -11,6 +13,7 @@ const GamePage = () => {
 			<Row>
 				<Col xs={16} md={16}>
 					<ButtonPlay />
+					<Foundation />
 				</Col>
 				<Col xs={16} md={16}>
 					<Cards />
@@ -19,6 +22,7 @@ const GamePage = () => {
 			<Row>
 				<Col>
 					<ToastWinner />
+					<OutOfCards />
 				</Col>
 			</Row>
 		</Container>
